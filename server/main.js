@@ -6,7 +6,14 @@ var messages = new Mongo.Collection("messages");
 HTTP.methods({
   'test': function() {
     cl('test run');
-    return {json: 1000};
+    var arr = [];
+    for(var i = 0; i < 9; i++) {
+      arr.push({
+        imageName: '',
+        count: 0
+      });
+    }
+    return arr;
   },
   'insertData': function(data) {
     cl(data);

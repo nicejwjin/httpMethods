@@ -13,6 +13,7 @@ HTTP.methods({
         count: 0
       });
     }
+
     return arr;
   },
   'insertData': function(data) {
